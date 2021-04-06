@@ -1,0 +1,4 @@
+name: Enderbutt
+author: Staud
+version: ${pom.version}
+main: io.github.staudlol.EnderButtPlugin
