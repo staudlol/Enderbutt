@@ -11,9 +11,6 @@ public class EnderButtPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
-
-        Arrays.asList(
-                new EnderButtListener()
-        ).forEach(listener -> Bukkit.getPluginManager().registerEvents(listener, this));
+        Bukkit.getPluginManager().registerEvents(new EnderButtListener(), this));
     }
 }
