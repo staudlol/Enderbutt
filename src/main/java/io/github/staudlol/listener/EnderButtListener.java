@@ -14,7 +14,7 @@ public class EnderButtListener implements Listener {
     public void onThrow(PlayerInteractEvent event) {
         final Player player = event.getPlayer();
 
-        if(event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK) {
+        if (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK) {
             if(player.getItemInHand().getType() == Material.ENDER_PEARL) {
                 player.setVelocity(player.getLocation().getDirection().normalize().multiply(4));
                 player.playSound(player.getLocation(), Sound.CHICKEN_EGG_POP, 1F, 1F);
